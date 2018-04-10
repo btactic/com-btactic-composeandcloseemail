@@ -8,6 +8,8 @@ You can find more information about the bug in [Zimbra Bugzilla #107903](https:/
 
 This zimlet is an attempt of making a workaround for this bug according to [Thierry's comment 21](https://bugzilla.zimbra.com/show_bug.cgi?id=107903#c21) where he suggests to open a new Compose view and closing it.
 
+According from a support technician from Zimbra the bug is fixed in ZCS 8.8.8. This statement has not been confirmed by the Zimbra community yet.
+
 ## How to build
 
 ```
