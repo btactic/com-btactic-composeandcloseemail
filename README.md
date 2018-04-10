@@ -19,8 +19,8 @@ zip -r ../com_btactic_composeandcloseemail.zip *
 ## How to get the binary release
 
 You can download zip files ready to use from: 
-https://github.com/btactic/com-btactic-composeandcloseemail/releases
-just rename the downloaded files as:
+https://github.com/btactic/com-btactic-composeandcloseemail/releases .
+You just need to make sure to rename the downloaded files as:
 ```
 com_btactic_composeandcloseemail.zip
 ```
