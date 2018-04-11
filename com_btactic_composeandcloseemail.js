@@ -51,14 +51,14 @@ ComposeAndCloseZimlet.prototype.init = function() {
     function cancelComposeController () {
     setTimeout(function () {
         composeAndCloseZimletController._cancelCompose()
-    }, 500 );
+    }, 1000 );
 
     }
 
     var composeAndCloseZimletController = AjxDispatcher.run("GetComposeController");
         if(composeAndCloseZimletController) {
             var composeAndCloseParams = {action:ZmOperation.NEW_MESSAGE, inNewWindow:false, composeMode:Dwt.HTML,
-            toOverride:null, subjOverride:'Loading... This email will be closed automatically', extraBodyText:'', callback:cancelComposeController}
+            toOverride:null, subjOverride:'Loading... This email will be closed automatically', extraBodyText:'', callback:cancelComposeController, hideView:true}
             composeAndCloseZimletController.doAction(composeAndCloseParams); // opens asynchronously the window.
         }
 
