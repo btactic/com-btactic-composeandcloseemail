@@ -42,16 +42,16 @@ var ComposeAndCloseZimlet = com_btactic_composeandcloseemail_HandlerObject;
 
     function cancelComposeController () {
     setTimeout(function () {
-        composeController._cancelCompose()
+        composeAndCloseZimletController._cancelCompose()
     }, 500 );
 
     }
 
-    var composeController = AjxDispatcher.run("GetComposeController");
-        if(composeController) {
-            var params = {action:ZmOperation.NEW_MESSAGE, inNewWindow:false, composeMode:Dwt.HTML,
+    var composeAndCloseZimletController = AjxDispatcher.run("GetComposeController");
+        if(composeAndCloseZimletController) {
+            var composeAndCloseParams = {action:ZmOperation.NEW_MESSAGE, inNewWindow:false, composeMode:Dwt.HTML,
             toOverride:null, subjOverride:'Loading... This email will be closed automatically', extraBodyText:'', callback:cancelComposeController}
-            composeController.doAction(params); // opens asynchronously the window.
+            composeAndCloseZimletController.doAction(composeAndCloseParams); // opens asynchronously the window.
         }
 
 /** 
