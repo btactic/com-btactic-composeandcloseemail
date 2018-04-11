@@ -40,6 +40,14 @@ function() {
 var ComposeAndCloseZimlet = com_btactic_composeandcloseemail_HandlerObject;
 
 
+
+
+/** 
+ * This method gets called when Zimbra Zimlet framework initializes.
+ * ComposeAndCloseZimlet uses the init function to load openpgp.js and configure the user settings and runtime variables.
+ */
+ComposeAndCloseZimlet.prototype.init = function() {
+
     function cancelComposeController () {
     setTimeout(function () {
         composeAndCloseZimletController._cancelCompose()
@@ -53,12 +61,5 @@ var ComposeAndCloseZimlet = com_btactic_composeandcloseemail_HandlerObject;
             toOverride:null, subjOverride:'Loading... This email will be closed automatically', extraBodyText:'', callback:cancelComposeController}
             composeAndCloseZimletController.doAction(composeAndCloseParams); // opens asynchronously the window.
         }
-
-/** 
- * This method gets called when Zimbra Zimlet framework initializes.
- * ComposeAndCloseZimlet uses the init function to load openpgp.js and configure the user settings and runtime variables.
- */
-ComposeAndCloseZimlet.prototype.init = function() {
-
 
 };
