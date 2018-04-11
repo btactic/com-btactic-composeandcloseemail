@@ -1,4 +1,4 @@
-<zimlet name="com_btactic_composeandcloseemail" version="0.0.1" label="ComposeAndCloseEmail" description="Open a New Email and close it.">
+<zimlet name="com_btactic_composeandcloseemail" version="0.0.2" label="ComposeAndCloseEmail" description="Open a New Email and close it.">
    <summary>
 Zimbra ComposeAndCloseEmail Zimlet
 
