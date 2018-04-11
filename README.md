@@ -33,4 +33,33 @@ Just deploy your zimlet in your ZCS as you would do with any other zimlet.
 
 ## What happens when the zimlet is enabled
 
-The final user when its Zimbra UI is being loaded will be for about half a second a 'New message' titled 'Loading...'. That new message will be closed.
+While Zimbra UI is being loaded a hidden 'New message' tab will be opened and a second later that hidden tab will be closed.
+
+You can check thanks to F12 (in most of the internet browsers) your console output.
+
+Before enabling the zimlet in ZCS 8.7 when the UI is started you get:
+
+```
+---- Loading package: MailCore
+---- Loading package: ContactsCore
+---- Loading package: Startup2
+---- Loading package: CalendarCore, Calendar
+---- Loading package: Zimlet
+---- Loading package: Contacts
+```
+.
+
+After enabling the zimlet in ZCS 8.7 when the UI is started you get:
+
+
+```
+---- Loading package: MailCore
+---- Loading package: ContactsCore
+---- Loading package: Startup2
+---- Loading package: CalendarCore, Calendar
+---- Loading package: Zimlet
+---- Loading package: Contacts
+---- Loading package: Mail
+---- Loading package: TinyMCE
+```
+.
