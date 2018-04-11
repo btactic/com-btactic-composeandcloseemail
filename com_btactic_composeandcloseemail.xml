@@ -24,4 +24,5 @@ along with this program.  If not, see http://www.gnu.org/licenses/.
 Remark for developers:
    </summary>
    <include>com_btactic_composeandcloseemail.js</include>
+   <handlerObject>com_btactic_composeandcloseemail_HandlerObject</handlerObject>
 </zimlet>
